@@ -136,7 +136,7 @@ def read_data_from_files(files, data_path):
     
     return acc_df, gyr_df
 
-acc_df, gyr_df = read_data_from_files(files)
+acc_df, gyr_df = read_data_from_files(files=files, data_path=data_path)
 
 # --------------------------------------------------------------
 # Merging datasets
@@ -153,9 +153,9 @@ data_merged.columns = [
     "gyr_x",
     "gyr_y",
     "gyr_z",
+    "participant",
     "label",
     "category",
-    "participant",
     "set",
 ]
 
@@ -174,9 +174,9 @@ sampling = {
     "gyr_x": "mean",
     "gyr_y": "mean",
     "gyr_z": "mean",
+    "participant": "last",
     "label": "last",
     "category": "last",
-    "participant": "last",
     "set": "last",
 }
 
