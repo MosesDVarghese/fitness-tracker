@@ -12,3 +12,8 @@ ToDo
 - fourier transformation
 - predictive modelling
 - ML algorithm
+
+Download Dataset:
+https://mbientlab.com/metamotions/
+
+Add to data/raw/MetaMotion
