@@ -271,10 +271,8 @@ plt.show()
 # check for duration column
 df_cluster["duration"]
 
+# remove duration column
 df_cluster_export = df_cluster.drop(columns=['duration'])
 
-df_cluster_export
-
-# remove duration column
 
 df_cluster_export.to_pickle("../../data/interim/03_data_features.pkl")
