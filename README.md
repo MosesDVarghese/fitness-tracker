@@ -4,7 +4,10 @@ This project performs data mining on exercise data and then implements a custom 
 
 ## Project Steps
 
-### 1. Project Setup (git clone this repo)
+### 1. Project Setup
+
+git clone the starter repo:
+https://github.com/daveebbelaar/data-science-template
 
 Download Dataset:
 https://mbientlab.com/metamotions/
