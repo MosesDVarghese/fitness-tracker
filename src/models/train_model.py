@@ -45,7 +45,7 @@ square_features = ["acc_r", "gyr_r"]
 pca_features = ["pca_1", "pca_2", "pca_3"]
 # list comprehension for time and frequency features
 time_features = [f for f in df_train.columns if "_temp_" in f]
-freq_features = [f for f in df_train.columns if (("_freq" in f) or ("_pse" in f))]
+freq_features = [f for f in df_train.columns if ("_freq" in f) or ("_pse" in f)]
 cluster_features = ["cluster"]
 
 print("Basic features: ", len(basic_features))
@@ -69,7 +69,7 @@ learner = ClassificationAlgorithms()
 max_features = 10
 
 selected_features, ordered_features, ordered_scores = learner.forward_selection(
-    max_features, x_train, y_train
+    max_features, X_train, y_train
 )
 
 selected_features = [
