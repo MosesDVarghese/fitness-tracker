@@ -33,8 +33,8 @@ df.info()
 # Calculating set duration
 # --------------------------------------------------------------
 
-df[df["set"] == 25]["acc_y"].plot()
-df[df["set"] == 50]["acc_y"].plot()
+# df[df["set"] == 25]["acc_y"].plot()
+# df[df["set"] == 50]["acc_y"].plot()
 
 duration = df[df["set"] == 1].index[-1] - df[df["set"] == 1].index[0]
 duration.seconds
